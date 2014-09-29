@@ -1,0 +1,183 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+#mainpage {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    background: #1f2424 repeat-y right top;
+}
+.layout {
+    background-color: #9ca3a8;
+}
+
+.head {
+    display: inline-block;
+    font-size: larger;
+    text-align:  right;
+    font-weight: bold;
+}
+
+.mainbody {
+    background-color: #ffffff;
+}
+
+.homeimage {
+    width: 100%;
+}
+
+.container {
+    float: left;
+    padding:10px;
+}
+
+#content-wrapper {
+    background: #849AA9 url(bg1.gif) top left repeat-y;
+    text-align: center;
+    margin-left: 5px auto;
+    position: relative;
+    width: 100%;
+}
+
+.content{
+    width: 30%;
+    height: 270px;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 2px 5px 5px 5px ;
+    float: left;
+    box-shadow: rgba(0,0,0,.20) 0 2px ,1px 0;
+}
+    
+.content p {
+        text-decoration-color: white;
+      }
+footer {
+    display: block;
+    text-align: right;
+    background: #9ca3a8;
+    margin-top: 694px; 
+    padding-left: 15px;
+    padding-top: 10px; 
+    padding-right: 15px; 
+    padding-bottom: 0px;
+    height: 58px;
+}
+
+.foot {
+    display: inline-block;
+    text-align: left;
+}
+.workcontainer {
+    width:100%;
+    display: inline;
+}
+
+.image {
+    width: 70%;
+    height: auto;
+    margin: 5px;
+    display: inline-block;
+}
+.desc {
+    text-align: center;
+    font-weight: bold;
+}
+.imagecontainer {
+    width: 45%;
+    display: inline-block;
+}
+    
+form {
+    font-size: large;
+    font-weight: bold;
+   
+}
+.lable1 {
+    display: inline;
+}
+.lable2 {
+display: inline;}
+
+textbox {
+    border: 1px solid #e2e2e2;
+background: #fff;
+color: #333;
+font-size: 1.2em;
+margin: 5px 0 6px 0;
+padding: 5px;
+width: 300px;
+}
+
+div.lable{
+clear:left;
+margin:6px;
+}
+label
+{
+float:left;
+width:200px;
+}
+textbox
+{
+width:200px;
+height:100px;
+}

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body id="mainpage">
+    <div class="mainbody">
+        <div class="layout">
+            <header>
+                <div class="head">
+                    <h1>Alemshewit Araya Weldearegay</h1>
+                </div>
+                <div class="head">
+                    <nav class="navigation">
+                        <a class="active" href ="@Url.Action("Index", "Home")">HOME</a>
+                        <a href ="@Url.Action("Index", "About")">ABOUT</a>
+                        <a href ="@Url.Action("Index", "Work")">WORK</a>
+                        <a href ="@Url.Action("Index", "Contact")">CONTACT</a>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+
+        @RenderBody()
+
+        <footer>
+            <div class="foot">
+                <a class="active" href ="@Url.Action("Index", "Home")">HOME</a>
+                &nbsp;|&nbsp;
+                <a href ="@Url.Action("About", "Home")">ABOUT</a>
+                &nbsp;|&nbsp;
+                <a href ="@Url.Action("Work", "Home")">WORK</a>
+                &nbsp;|&nbsp;
+                <a href ="@Url.Action("Contact", "Home")">CONTACT</a>
+                <br />
+                Copyright © @DateTime.Now.Year - All rights reserved AlemShewit 
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
