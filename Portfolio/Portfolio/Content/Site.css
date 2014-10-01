@@ -63,7 +63,7 @@ textarea {
     width: 960px;
     margin: 0 auto;
     text-align: left;
-    background: #1f2424 repeat-y right top;
+    background: #2d2d2d repeat-y right top;
 }
 .layout {
     background-color: #9ca3a8;
@@ -122,8 +122,10 @@ footer {
     height: 58px;
 }
 
-.foot {
+#copy, #link{
     display: inline-block;
+}
+#copy {
     text-align: left;
 }
 .workcontainer {
