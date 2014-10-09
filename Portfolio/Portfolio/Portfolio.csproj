@@ -125,8 +125,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResumeController.cs" />
     <Compile Include="Controllers\WorkController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -153,10 +155,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\themes\base\images\Alem.png" />
+    <Content Include="Content\themes\base\images\alem2.png" />
+    <Content Include="Content\themes\base\images\Alem_Resume2.jpg" />
+    <Content Include="Content\themes\base\images\Aleshewit.png" />
+    <Content Include="Content\themes\base\images\battleship.png" />
+    <Content Include="Content\themes\base\images\blog.jpg" />
+    <Content Include="Content\themes\base\images\cooltext1743318278.png" />
+    <Content Include="Content\themes\base\images\dragon.jpg.png" />
+    <Content Include="Content\themes\base\images\hangman.jpg" />
     <Content Include="Content\themes\base\images\images1.jpg" />
     <Content Include="Content\themes\base\images\images2.jpg" />
     <Content Include="Content\themes\base\images\images3.jpg" />
     <Content Include="Content\themes\base\images\images4.jpg" />
+    <Content Include="Content\themes\base\images\Alem_Resume.jpg" />
+    <Content Include="Content\themes\base\images\Resume.jpg" />
+    <Content Include="Content\themes\base\images\summer-forest.jpg" />
+    <Content Include="Content\themes\base\images\trivia.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -230,6 +245,7 @@
       <DependentUpon>Contacts.edmx</DependentUpon>
       <LastGenOutput>Contacts.cs</LastGenOutput>
     </Content>
+    <Content Include="Content\themes\base\images\3 out of 5-SD.flv" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -247,7 +263,9 @@
     <Content Include="Scripts\Main.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -263,6 +281,8 @@
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\Thankyou.cshtml" />
+    <Content Include="Views\Resume\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

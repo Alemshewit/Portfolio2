@@ -12,7 +12,7 @@ namespace Portfolio.Models
     }
     public class ContactFormValidation
     {
-        [Required]
+        [Required, Display(Name="Your Name")]
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
@@ -21,7 +21,7 @@ namespace Portfolio.Models
         public string Email { get; set; }
         [Required]
         public string PhoneNumber { get; set; }
-        [Required]
+        [Required, DataType(DataType.MultilineText)]
         public string Message { get; set; }
     }
 }

@@ -9,9 +9,7 @@ namespace Portfolio.Controllers
 {
     public class ContactController : Controller
     {
-        //
-        // GET: /Contact/
-        //Models.AlemShewitEntities db = new Models.AlemShewitEntities();
+       
 
         [HttpGet]
         public ActionResult Index()
@@ -19,21 +17,11 @@ namespace Portfolio.Controllers
             return View(new Models.ContactForm());
         }
 
-        //[HttpPost]
-        //public ActionResult Index(Models.ContactForm contactForm)
-        //{
-        //  Models.AlemShewitEntities db = new Models.AlemShewitEntities();
-        //    db.ContactForms.Add(contactForm);
-        //    db.SaveChanges();
-
-        //    return RedirectToAction("Thankyou", "Contact");
-        //}
-
-        //new cont form post to send mean email with the info
+     
         [HttpPost]
         public ActionResult Index(Models.ContactForm contactForm)
         {
-            //sending an eamil
+            //sending an email
             //setp1. add using system.Net.Mail
             //step2. create a new message
             //first para is who it is from, and the second is who it's to.
@@ -58,14 +46,19 @@ namespace Portfolio.Controllers
             smtpClient.Send(mailmessage);
             //done.
             //kick the user to the thank you page
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView("Thankyou");
+            }
+            else 
+
             return RedirectToAction("ThankYou", "Contact");
             
 
         }
-        public ActionResult Thankyou()
-        {
-            return View();
-        }
 
+ 
+
+       
     }
 }

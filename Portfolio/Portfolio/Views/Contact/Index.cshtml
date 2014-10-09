@@ -4,42 +4,57 @@
 }
 
 <header>
-    <img src="http://cdn-img.easylogo.cn/gif/51/51700.gif" />
 </header>
-<h2>Contact Form</h2>
+<div class="contactContainer">
+<h1 id="contactHeader"><strong>Write Me</strong></h1>
 
-<form class="textarea" action="@Url.Action("Index", "Contact")" method ="post">
-    
-    <div class="lable">
+<form class="textarea" id="contactForm" action="@Url.Action("Index", "Contact")" method ="post">
+<fieldset>
+        <legend style="font-weight:bold; color:#11bd2d;">Fill the form below and I will contact you soon</legend>
+    <div class="label">
         @Html.LabelFor(x => x.FirstName)
+    </div>
+    <div>
         @Html.TextBoxFor(x => x.FirstName)
         @Html.ValidationMessageFor(x => x.FirstName)
     </div>
-    <div class="lable">
+
+    <div class="label">
         @Html.LabelFor(x => x.LastName)
+    </div>
+    <div>
         @Html.TextBoxFor(x => x.LastName)
         @Html.ValidationMessageFor(x => x.LastName)
     </div>
-    <div class="labe">
+    <div class="label">
         @Html.LabelFor(x => x.Email)
+    </div>
+    <div>
         @Html.TextBoxFor(x => x.Email)
         @Html.ValidationMessageFor(x => x.Email)
     </div>
-    <div class="lable">
+    <div class="label">
         @Html.LabelFor(x => x.PhoneNumber)
+    </div>
+    <div>
         @Html.TextBoxFor(x => x.PhoneNumber)
         @Html.ValidationMessageFor(x => x.PhoneNumber)
     </div>
-    <div class="lable">
+    <div class="label">
         @Html.LabelFor(x => x.Message)
+    </div>
+    <div>
         @Html.TextAreaFor(x => x.Message)
         @Html.ValidationMessageFor(x => x.Message)
     </div>
 
-    <input type="submit" value="Submit" />
+    <input type="submit" class="btnprimary" value="Send Message" data-url="@Url.Action("Thankyou", "AJAXGET")" data-action="@Url.Action("Index", "Contact")">
+    </fieldset>
 </form>
+    
+</div>
 @*Add a refrence to jQuery Vlaidation this is the javascript that 
 actually perfomrs our validation using jQuery*@
 @section Scripts{
-@Scripts.Render("~/bundles/jQueryval")
+    @Scripts.Render("~/bundles/jqueryval")
 }
